@@ -6,8 +6,7 @@ import Layout from './layout';
 
 import Home from './pages/home';
 import Dashboard from './pages/dashboard';
-import Customer from './pages/customer/customer';
-import Login from './pages/login';
+import Department from './pages/department/department';
 
 const app = document.getElementById('app');
 
@@ -17,9 +16,8 @@ ReactDom.render(
         <Route path="/" component={Layout}>
             <IndexRoute component={Home}/>
             <Route path="dashboard" component={Dashboard}/>
-            <Route path="customers" component={Customer}/>
+            <Route path="departments" component={Department}/>
         </Route>
-        <Route path="/login" component={Login}/>
-    </Router>,
+    </Router>
     app
 );

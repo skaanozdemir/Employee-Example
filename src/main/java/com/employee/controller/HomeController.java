@@ -1,11 +1,6 @@
-package com.westlyf.controller;
+package com.employee.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-/**
- * Created by Yves on 1/19/2017.
- */
 
 @Controller
 public class HomeController {

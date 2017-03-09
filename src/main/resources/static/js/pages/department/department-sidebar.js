@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class CustomerSidebar extends React.Component{
+export default class DepartmentSidebar extends React.Component{
     
     constructor(props){
         super(props);
@@ -22,7 +22,7 @@ export default class CustomerSidebar extends React.Component{
                 <form role="form" className="form-horizontal">
                     <div className="form-group">
                         <div className="col-sm-8">
-                            <h4><span className="glyphicon glyphicon-plus"/> Add New Customer</h4>
+                            <h4><span className="glyphicon glyphicon-plus"/> Add New Department</h4>
                         </div>
                         <div className="col-sm-4">
                             <button type="button" className="btn btn-danger pull-right">
@@ -32,59 +32,32 @@ export default class CustomerSidebar extends React.Component{
                     </div>
                     <hr/>
                     <div className="form-group">
-                        <label htmlFor="customerName" className="col-sm-3 control-label">Customer Name:</label>
+                        <label htmlFor="departmentName" className="col-sm-3 control-label">Department Name:</label>
                         <div className="col-sm-9">
                             <input type="text" className="form-control"
-                                   name="customerName" id="customerName" placeholder="John"/>
+                                   name="departmentName" id="departmentName" placeholder="John"/>
                         </div>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="remark" className="col-sm-3 control-label">Remark:</label>
+                        <label htmlFor="description" className="col-sm-3 control-label">Description:</label>
                         <div className="col-sm-9">
                             <textarea className="form-control" rows="3" style={resizeClass}
-                                      name="remark" id="remark" placeholder="Insert Text Here..."/>
+                                      name="description" id="description" placeholder="Insert Text Here..."/>
                         </div>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="location" className="col-sm-3 control-label">Location:</label>
+                        <label htmlFor="employeeId" className="col-sm-3 control-label">Employee Id:</label>
                         <div className="col-sm-9">
                             <input type="text" className="form-control"
-                                   name="location" id="location" placeholder="Manila"/>
+                                   name="employeeId" id="employeeId" placeholder="Manila"/>
                         </div>
                     </div>
-                    <div className="form-group">
-                        <label htmlFor="locationCode" className="col-sm-3 control-label">Location Code:</label>
-                        <div className="col-sm-9">
-                            <input type="text" className="form-control"
-                                   name="locationCode" id="locationCode" placeholder="1234"/>
-                        </div>
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="locationCode" className="col-sm-3 control-label">Credit Limit:</label>
-                        <div className="col-sm-9">
-                            <input type="number" className="form-control"
-                                   name="locationCode" id="locationCode" placeholder="100000.00"/>
-                        </div>
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="totalDebt" className="col-sm-3 control-label">Total Debt:</label>
-                        <div className="col-sm-9">
-                            <input type="number" className="form-control"
-                                   name="totalDebt" id="totalDebt" placeholder="9999.99"/>
-                        </div>
-                    </div>
+           
                     <div className="form-group">
                         <label htmlFor="dueDate" className="col-sm-3 control-label">Due Date:</label>
                         <div className="col-sm-9">
                             <input type="date" className="form-control"
                                    name="dueDate" id="dueDate"/>
-                        </div>
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="tinNumber" className="col-sm-3 control-label">Tin Number:</label>
-                        <div className="col-sm-9">
-                            <input type="text" className="form-control"
-                                   name="tinNumber" id="tinNumber" placeholder="0987654321"/>
                         </div>
                     </div>
                     <hr/>
