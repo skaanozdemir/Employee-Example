@@ -2,7 +2,7 @@ Installation
 
 Clone the repository
 
-$git clone https://github.com/skaanozdemir/Employee-Example-Project.git
+$git clone https://github.com/skaanozdemir/Employee-Example.git
 
 1)Change database driver( by default set for MYSQL) and please change your mysql (url,user,password) in 
 /src/main/application.properties 
